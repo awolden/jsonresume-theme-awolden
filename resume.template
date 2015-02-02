@@ -345,7 +345,7 @@
 				{{#if level}}
 				<div class="bar">
 					<span class="zero">Zero</span>
-					<span class="zero">Hero</span>
+					<span class="hero">Hero</span>
 					<span class="mastery-{{level}}"></span>
 				</div>
 				{{/if}}
