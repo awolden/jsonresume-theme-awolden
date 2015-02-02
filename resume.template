@@ -129,9 +129,15 @@
 			<div class="col-sm-12">
 				<h4 class="strike-through">
 					<span>{{company}}</span>
+					{{#if endDate}}
 					<span class="date">
 						{{startDate}} — {{endDate}}
 					</span>
+					{{else}}
+					<span class="date">
+						{{startDate}} — Present
+					</span>
+					{{/if}}
 				</h4>
 				{{#website}}
 				<div class="website pull-right">
@@ -339,7 +345,7 @@
 				{{#if level}}
 				<div class="bar">
 					<span class="zero">Zero</span>
-					<span class="hero">Hero</span>
+					<span class="zero">Hero</span>
 					<span class="mastery-{{level}}"></span>
 				</div>
 				{{/if}}
